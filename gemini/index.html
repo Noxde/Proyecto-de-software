@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinos Turísticos</title>
+    <link rel="stylesheet" href="estilosIA.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#playa">Playa</a></li>
+          <li><a href="#montana">Montaña</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#mantenedor">Sobre Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="playa" class="categoria">
+        <h2>Destinos de Playa</h2>
+        <div class="destinos-grid">
+          <article class="destino">
+            <img src="imágenes/mardel.png" alt="Mar del Plata" />
+            <div class="info">
+              <h3>Mar del Plata</h3>
+              <p>
+                La ciudad balnearia más emblemática, ideal para disfrutar del
+                mar, la gastronomía y el surf.
+              </p>
+              <a href="guías/mardel.pdf" download class="itinerario-link"
+                >Descargar Itinerario</a
+              >
+            </div>
+          </article>
+          <article class="destino">
+            <img src="imágenes/piramides.png" alt="Puerto Pirámides" />
+            <div class="info">
+              <h3>Puerto Pirámides</h3>
+              <p>
+                El mejor punto de partida para el avistaje de ballenas en las
+                aguas cristalinas del sur.
+              </p>
+              <a href="guías/piramides.pdf" download class="itinerario-link"
+                >Descargar Itinerario</a
+              >
+            </div>
+          </article>
+          <article class="destino">
+            <img src="imágenes/pinamar.png" alt="Pinamar" />
+            <div class="info">
+              <h3>Pinamar</h3>
+              <p>
+                Extensas playas rodeadas de bosques de pinos, perfectas para un
+                descanso tranquilo.
+              </p>
+              <a href="guías/pinamar.pdf" download class="itinerario-link"
+                >Descargar Itinerario</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="montana" class="categoria">
+        <h2>Destinos de Montaña</h2>
+        <div class="destinos-grid">
+          <article class="destino">
+            <img src="imágenes/bariloche.png" alt="San Carlos de Bariloche" />
+            <div class="info">
+              <h3>Bariloche</h3>
+              <p>
+                Lagos, cerros y bosques. Un destino inigualable tanto en
+                invierno para esquiar como en verano.
+              </p>
+              <a href="guías/bariloche.pdf" download class="itinerario-link"
+                >Descargar Itinerario</a
+              >
+            </div>
+          </article>
+          <article class="destino">
+            <img src="imágenes/sma.png" alt="San Martín de los Andes" />
+            <div class="info">
+              <h3>San Martín de los Andes</h3>
+              <p>
+                Arquitectura alpina al pie del lago Lácar, entrada a la famosa
+                Ruta de los Siete Lagos.
+              </p>
+              <a href="guías/sma.pdf" download class="itinerario-link"
+                >Descargar Itinerario</a
+              >
+            </div>
+          </article>
+          <article class="destino">
+            <img src="imágenes/mendoza.png" alt="Mendoza" />
+            <div class="info">
+              <h3>Mendoza</h3>
+              <p>
+                La tierra del sol, el buen vino y la majestuosa Cordillera de
+                los Andes de fondo.
+              </p>
+              <a href="guías/mendoza.pdf" download class="itinerario-link"
+                >Descargar Itinerario</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacto" class="info-section">
+        <h2>Contacto</h2>
+        <form action="#" method="POST" class="formulario">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <section id="mantenedor" class="info-section">
+        <h2>Quiénes Somos</h2>
+        <p>
+          Este sitio es mantenido por un equipo de estudiantes de informática,
+          apasionados por el turismo nacional y el desarrollo web accesible.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

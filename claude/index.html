@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruta AR — Destinos de playa y montaña</title>
+    <meta
+      name="description"
+      content="Sitio estático para descubrir destinos turísticos de playa y montaña en Argentina, con información de contacto e itinerarios descargables."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilosIA.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="topbar">
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="brand" href="#inicio">
+          <span class="brand-mark" aria-hidden="true">◮</span>
+          Ruta&nbsp;AR
+        </a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+
+        <ul class="nav-links">
+          <li class="nav-item has-dropdown">
+            <a href="#playa">Playa</a>
+            <ul class="dropdown">
+              <li><a href="#playa">Mar del Plata</a></li>
+              <li><a href="#playa">Puerto Pirámides</a></li>
+              <li><a href="#playa">Pinamar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="#montana">Montaña</a>
+            <ul class="dropdown">
+              <li><a href="#montana">Bariloche</a></li>
+              <li><a href="#montana">San Martín de los Andes</a></li>
+              <li><a href="#montana">La Cumbrecita</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#quienes">Quiénes somos</a></li>
+          <li class="nav-item">
+            <a href="#contacto" class="nav-cta">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio">
+        <div class="hero-inner">
+          <p class="hero-eyebrow">Playa y montaña, sin escalas</p>
+          <h1>
+            Argentina tiene<br />dos costas: <em>el mar</em><br />y la
+            cordillera.
+          </h1>
+          <p class="hero-lead">
+            Una guía sencilla para elegir tu próximo viaje, con reseñas breves e
+            itinerarios listos para descargar.
+          </p>
+          <a href="#destinos" class="hero-button">Ver destinos</a>
+        </div>
+        <div class="hero-divider" aria-hidden="true">
+          <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+            <path
+              d="M0,40 C300,90 400,0 600,30 C800,60 900,10 1200,45 L1200,80 L0,80 Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <section class="destinos" id="destinos">
+        <div class="section-head">
+          <h2>Elegí una categoría</h2>
+          <p>
+            Cada categoría muestra sus propios destinos, con foto, reseña e
+            itinerario descargable.
+          </p>
+        </div>
+
+        <div class="categoria-selector">
+          <a href="#playa" class="chip chip-playa">Playa</a>
+          <a href="#montana" class="chip chip-montana">Montaña</a>
+        </div>
+
+        <div class="panels">
+          <section
+            id="playa"
+            class="panel panel-playa"
+            aria-label="Destinos de playa"
+          >
+            <h3 class="panel-title panel-title-playa">Destinos de playa</h3>
+            <div class="cards">
+              <article class="card" id="mardel">
+                <img
+                  src="imagenes/mardel.png"
+                  alt="Ilustración de la costa de Mar del Plata con velero y gaviotas"
+                />
+                <div class="card-body">
+                  <h4>Mar del Plata</h4>
+                  <p>
+                    La ciudad balnearia más visitada del país: playas extensas,
+                    rambla animada y puesta de sol desde el Torreón del Monje.
+                  </p>
+                  <a class="download" href="guias/mardel.pdf" download
+                    >Descargar itinerario</a
+                  >
+                </div>
+              </article>
+
+              <article class="card" id="piramides">
+                <img
+                  src="imagenes/piramides.png"
+                  alt="Ilustración de la costa de Puerto Pirámides"
+                />
+                <div class="card-body">
+                  <h4>Puerto Pirámides</h4>
+                  <p>
+                    Único poblado costero de la Península Valdés: avistaje de
+                    ballenas, lobos marinos y acantilados sobre el golfo.
+                  </p>
+                  <a class="download" href="guias/piramides.pdf" download
+                    >Descargar itinerario</a
+                  >
+                </div>
+              </article>
+
+              <article class="card" id="pinamar">
+                <img
+                  src="imagenes/pinamar.png"
+                  alt="Ilustración de la costa de Pinamar"
+                />
+                <div class="card-body">
+                  <h4>Pinamar</h4>
+                  <p>
+                    Playas amplias entre médanos y bosques de pinos, ideal para
+                    bicicleta, cabalgatas y deportes de playa.
+                  </p>
+                  <a class="download" href="guias/pinamar.pdf" download
+                    >Descargar itinerario</a
+                  >
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section
+            id="montana"
+            class="panel panel-montana"
+            aria-label="Destinos de montaña"
+          >
+            <h3 class="panel-title panel-title-montana">Destinos de montaña</h3>
+            <div class="cards">
+              <article class="card" id="bariloche">
+                <img
+                  src="imagenes/bariloche.png"
+                  alt="Ilustración de cerros y bosques de Bariloche"
+                />
+                <div class="card-body">
+                  <h4>Bariloche</h4>
+                  <p>
+                    Lagos, bosques y montañas alrededor del Nahuel Huapi, con el
+                    clásico Circuito Chico y chocolate artesanal.
+                  </p>
+                  <a class="download" href="guias/bariloche.pdf" download
+                    >Descargar itinerario</a
+                  >
+                </div>
+              </article>
+
+              <article class="card" id="sanmartin">
+                <img
+                  src="imagenes/sanmartin.png"
+                  alt="Ilustración de cerros y bosques de San Martín de los Andes"
+                />
+                <div class="card-body">
+                  <h4>San Martín de los Andes</h4>
+                  <p>
+                    Pueblo de estilo alpino a orillas del lago Lácar, puerta de
+                    entrada a la Ruta de los Siete Lagos.
+                  </p>
+                  <a class="download" href="guias/sanmartin.pdf" download
+                    >Descargar itinerario</a
+                  >
+                </div>
+              </article>
+
+              <article class="card" id="cumbrecita">
+                <img
+                  src="imagenes/cumbrecita.png"
+                  alt="Ilustración de las sierras de La Cumbrecita"
+                />
+                <div class="card-body">
+                  <h4>La Cumbrecita</h4>
+                  <p>
+                    Pueblo peatonal en las Sierras Grandes de Córdoba, con
+                    cascadas, arroyos y casas de té de estilo alemán.
+                  </p>
+                  <a class="download" href="guias/cumbrecita.pdf" download
+                    >Descargar itinerario</a
+                  >
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="quienes" id="quienes">
+        <div class="quienes-inner">
+          <h2>Quién mantiene este sitio</h2>
+          <p>
+            Ruta AR es un proyecto de guía turística mantenido por
+            <strong>Estudiantes de Análisis de Sistemas</strong>, como parte de
+            un trabajo práctico sobre generación e interacción con inteligencia
+            artificial. El contenido es orientativo y se actualiza de forma
+            manual.
+          </p>
+          <dl class="quienes-datos">
+            <div>
+              <dt>Responsable</dt>
+              <dd>Cátedra Teoría de los Sistemas — Acto 1</dd>
+            </div>
+            <div>
+              <dt>Última actualización</dt>
+              <dd>2026</dd>
+            </div>
+            <div>
+              <dt>Alcance</dt>
+              <dd>Destinos de playa y montaña en Argentina</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="contacto" id="contacto">
+        <div class="contacto-inner">
+          <h2>Contacto</h2>
+          <p>
+            ¿Tenés dudas, sugerencias o querés proponer un destino? Escribinos.
+          </p>
+          <form class="form-contacto" action="#" method="post">
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                placeholder="Tu nombre"
+              />
+            </div>
+            <div class="campo">
+              <label for="email">Correo electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="tu@correo.com"
+              />
+            </div>
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                required
+                placeholder="Contanos qué necesitás"
+              ></textarea>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <p>
+        Ruta AR — Sitio estático de destinos turísticos. Trabajo práctico
+        académico, no representa un servicio real de turismo.
+      </p>
+    </footer>
+  </body>
+</html>
